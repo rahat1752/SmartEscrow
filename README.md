@@ -154,7 +154,7 @@ MetaMask is used only as a local wallet for signing transactions during the demo
 Clone the repository:
 
 ```bash
-git clone <your-github-repo-url>
+git clone https://github.com/rahat1752/SmartEscrow
 cd smartescrow
 ```
 
@@ -504,33 +504,7 @@ cd frontend
 npm run dev
 ```
 
-## Optional Sepolia Deployment
-
-The project can also be deployed to the Sepolia Ethereum testnet. For that, you need:
-
-* MetaMask
-* Sepolia test ETH
-* Alchemy or Infura Sepolia RPC URL
-* Private key of a funded Sepolia account
-
-Create a `.env` file based on `.env.example`:
-
-```env
-SEPOLIA_RPC_URL=your_sepolia_rpc_url
-PRIVATE_KEY=your_metamask_private_key
-```
-
-Then deploy:
-
-```bash
-npm run deploy:sepolia
-```
-
-Sepolia deployment is optional. The project works fully on a local Hardhat blockchain.
-
-## Security Considerations
-
-This project demonstrates several smart contract security concepts:
+This project demonstrates:
 
 * Role-based access control
 * Approval threshold enforcement
@@ -539,10 +513,4 @@ This project demonstrates several smart contract security concepts:
 * Automatic payment release
 * Reentrancy protection
 * Dispute and refund logic
-
-This is a course project and should be audited before any real-world use.
-
-## License
-
-This project is for academic and educational purposes.
 
